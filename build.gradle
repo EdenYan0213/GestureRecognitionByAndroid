@@ -1,0 +1,26 @@
+buildscript {
+    ext {
+        compileSdkVersion = 30
+        minSdkVersion = 21
+        targetSdkVersion = 30
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.1.0'
+        classpath 'com.google.gms:google-services:4.3.10' // For Google Services
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

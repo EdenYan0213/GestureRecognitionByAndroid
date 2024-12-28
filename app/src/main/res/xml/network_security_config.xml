@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- 允许应用连接到非加密（HTTP）的域名 -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">222.201.134.240</domain>
+    </domain-config>
+
+    <!-- 默认禁止所有HTTP连接 -->
+    <!-- <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">example.com</domain>
+    </domain-config> -->
+
+    <!-- 可选：允许所有域名的非加密流量（不推荐） -->
+    <!-- <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">*.example.com</domain>
+    </domain-config> -->
+</network-security-config>
